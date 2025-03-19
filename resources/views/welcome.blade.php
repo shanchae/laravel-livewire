@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        @vite('resources/css/app.css')
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -14,6 +14,13 @@
        
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div>
+            <h1>Send Event</h1>
+            <livewire:send-event />
+        </div>
+        <div>
+            Receive
+            <livewire:receive-event />
+        </div>
     </body>
 </html>
