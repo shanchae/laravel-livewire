@@ -1,16 +1,16 @@
 <?php
 
 use Livewire\Volt\Component;
-use Livewire\Volt\Attributes\On;
+use Livewire\Attributes\On;
 
 new class extends Component {
     //
-    public string $message;
+    public string $message = 'No message yet';
 
-    #[On('messageSent')]
-    public function displayMessage()
+    #[On('send-message')]
+    public function displayMessage($newMessage)
     {
-        $this->message = 'Hello from the other component';
+        $this->message = $newMessage;
     }
 
     #[On('resetComponent')]
@@ -21,6 +21,7 @@ new class extends Component {
 }; ?>
 
 <div>
+    <br>
     <h1>Receive Event</h1>
     <br>
     <br>

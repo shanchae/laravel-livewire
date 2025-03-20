@@ -14,13 +14,16 @@
        
     </head>
     <body>
-        <div>
+        <livewire:bird-form />
+        <!-- <livewire:lazy lazy /> -->
+        <!-- Hello World -->
+        <!-- <div>
             <h1>Send Event</h1>
             <livewire:send-event />
         </div>
         <div>
             Receive
             <livewire:receive-event />
-        </div>
+        </div> -->
     </body>
 </html>
